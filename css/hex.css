@@ -1,0 +1,135 @@
+#info {
+	background:#333;
+	opacity:0.8;
+	position: absolute;
+	top:5px;
+	right:5px;
+	width:280px;
+	color:#fff;
+	border-radius: 5px;
+	z-index:10
+}
+
+	#info p {
+		padding:0 10px;
+	}
+
+.containment {
+	height:100%;
+	position:relative;
+}
+
+.mobilePadding {
+	padding-left: 40px;
+}
+
+/* HEXAGON STARTS HERE */
+.hex {
+	width:150px;
+	height:86px;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	float:left;
+	margin:25px 5px;
+	text-align:center;
+	zoom:1;
+	z-index:1;
+}
+
+.hex.hex-gap {
+	margin-left: 86px;
+}
+
+.hex a {
+	display:block;
+	width: 100%;
+	height:100%;
+	text-indent:-9999em;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.hex .corner-1,
+.hex .corner-2 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	overflow:hidden;
+	background: inherit;
+	backface-visibility: hidden;
+}
+
+.hex .corner-1 {
+	transform: rotate(60deg);
+}
+
+.hex .corner-2 {
+	transform: rotate(-60deg);
+}
+
+.hex .corner-1:before,
+.hex .corner-2:before {
+	width: 172px;
+	height:	172px;
+  content: '';
+  position: absolute;
+  background: inherit;
+}
+
+.hex .corner-1:before {
+	left: 0;
+	transform-origin:left top;
+	transform: rotate(-60deg) translate(-86px, 0);
+}
+
+.hex .corner-2:before {
+	right: 0;
+	transform-origin: right top;
+	transform: rotate(60deg) translate(86px, 0);
+}
+
+/* Custom styles*/
+.hex .inner {
+	color:#eee;
+}
+
+.hex h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	margin:0;
+}
+
+.hex hr {
+	border:0;
+	border-top:1px solid #eee;
+	width:60%;
+	margin:15px auto;
+}
+
+.hex p {
+	font-size:24px;
+	font-family: 'Droid Serif', serif;
+	width:80%;
+	margin:25px auto;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	opacity: 0;
+}
+
+.hex.hex-1 {
+	background: #74cddb;
+}
+
+.hex.hex-2 {
+	background: #f5c53c;
+}
+
+.hex.hex-3 {
+	background: #80b971;
+}
