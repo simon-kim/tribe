@@ -62,15 +62,27 @@
 	z-index:-1;
 	overflow:hidden;
 	background: inherit;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
 .hex .corner-1 {
 	transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
 }
 
 .hex .corner-2 {
 	transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
 }
 
 .hex .corner-1:before,
@@ -80,18 +92,39 @@
   content: '';
   position: absolute;
   background: inherit;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .hex .corner-1:before {
 	left: 0;
 	transform-origin:left top;
-	transform: rotate(-60deg) translate(-86px, 0);
+	-webkit-transform-origin: left top;
+	-moz-transform-origin: left top;
+	-ms-transform-origin: left top;
+	-o-transform-origin: left top;
+	transform: rotate(-60deg) translate(-86px, 0px);
+	-webkit-transform: rotate(-60deg) translate(-86px, 0px);
+	-moz-transform: rotate(-60deg) translate(-86px, 0px);
+	-ms-transform: rotate(-60deg) translate(-86px, 0px);
+	-o-transform: rotate(-60deg) translate(-86px, 0px);
 }
 
 .hex .corner-2:before {
 	right: 0;
 	transform-origin: right top;
+	-webkit-transform-origin: right top;
+	-moz-transform-origin: right top;
+	-ms-transform-origin: right top;
+	-o-transform-origin: right top;
 	transform: rotate(60deg) translate(86px, 0);
+	-webkit-transform: rotate(60deg) translate(86px, 0);
+	-moz-transform: rotate(60deg) translate(86px, 0);
+	-ms-transform: rotate(60deg) translate(86px, 0);
+	-o-transform: rotate(60deg) translate(86px, 0);
 }
 
 /* Custom styles*/
