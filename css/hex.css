@@ -92,11 +92,11 @@
   content: '';
   position: absolute;
   background: inherit;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	-ms-backface-visibility: visible;
+	-o-backface-visibility: visible;
+	backface-visibility: visible;
 }
 
 .hex .corner-1:before {
